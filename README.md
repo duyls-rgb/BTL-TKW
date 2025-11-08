@@ -1,59 +1,95 @@
 # BTL-TKW
 
 
-# Quản Lý Nhân Sự (QuanLyNhanSu)
+# 🌐 Quản Lý Nhân Sự (QuanLyNhanSu_Update_v2)
 
-Website quản lý nhân sự với PHP và MySQL, có giao diện thân thiện, Dark Mode, thống kê, và upload ảnh hồ sơ nhân viên.
+Website quản lý nhân sự sử dụng **PHP + MySQL**, có giao diện hiện đại, hỗ trợ **Dark Mode**, **thống kê trực quan**, và **upload ảnh hồ sơ** nhân viên.
 
-##  Tính năng chính
+---
 
-1. Quản lý nhân viên (thêm, sửa, xóa, tìm kiếm, hiển thị danh sách)
-2. Quản lý phòng ban (thêm, sửa, xóa, liên kết nhân viên)
+## 🚀 Tính năng chính
+
+1. Quản lý nhân viên (Thêm, sửa, xóa, tìm kiếm)
+2. Quản lý phòng ban
 3. Thống kê nhân sự theo phòng ban (Chart.js)
-4. Upload và quản lý ảnh hồ sơ, tự động xóa avatar cũ khi cập nhật
+4. Upload và quản lý ảnh hồ sơ
 5. Giao diện người dùng hiện đại (Dark Mode, Toast Notification)
 6. Tìm kiếm và lọc dữ liệu nhân viên
 7. Kết nối và xử lý dữ liệu MySQL
-8. Responsive Layout (tương thích máy tính, tablet)
+8. Responsive Layout (tương thích PC, laptop, tablet)
 
-##  Cấu trúc thư mục
+---
 
+## 📁 Cấu trúc thư mục
+
+```
+
+QuanLyNhanSu/
 │
 ├── index.html              # Trang chủ - Giới thiệu hệ thống
 ├── nhanvien.html           # Trang quản lý nhân viên
 ├── phongban.html           # Trang quản lý phòng ban
-├── thongke.html            # Trang thống kê và báo cáo
-│── Đọc kỹ trước khi sử dụng.txt   # Hướng dẫn cài đặt và sử dụng
+├── thongke.html           # Trang thống kê và báo cáo
+├── Đọc kỹ trước khi sử dụng.txt       # Hướng dẫn cài đặt và sử dụng
+│
+├── api/
+│   ├── emps.php            # API quản lý nhân viên
+│   └── depts.php           # API quản lý phòng ban
+│
+├── inc/
+│   ├── config.php          # Cấu hình kết nối MySQL
+│   └── helpers.php         # Hàm tiện ích (JSON, upload, xóa file)
+│
 ├── css/
-│   └── style.css           # File CSS tùy chỉnh
+│   └── style.css           # Giao diện CSS tùy chỉnh
 │
 ├── js/
-│   └── main.js             # File JavaScript chính xử lý logic
+│   └── main.js             # Logic xử lý frontend (fetch API, toast, dark mode)
 │
 ├── images/
-│   └── logo.svg            # Logo của hệ thống
+│   └── logo.svg            # Logo và icon hệ thống
 │
-└── libs/                   # (Tùy chọn - nếu cần thư viện local)
-    ├── bootstrap/
-    └── chartjs/
+├── uploads/
+│   └── avatars/            # Lưu ảnh hồ sơ nhân viên
+│
+├── qlns.sql                # Cơ sở dữ liệu mẫu
+├── README.md               # Tài liệu này
 
-##  Cài đặt trên XAMPP
+```
 
-1. Tải và cài **XAMPP**: [https://www.apachefriends.org/](không nên cài vào ổ C:)
-2. Giải nén toàn bộ thư mục `QuanLyNhanSu` vào `Vị trí cài\xampp\htdocs\`
-3. Mở **phpMyAdmin**, tạo cơ sở dữ liệu `qlns` và import file `qlns.sql`
-4. Mở trình duyệt: `http://localhost/QuanLyNhanSu/`
-5. Sử dụng đầy đủ chức năng quản lý nhân viên, phòng ban và thống kê.
+---
 
-##  Công nghệ sử dụng
+## ⚙️ Cài đặt trên XAMPP
 
-- PHP (v7+)
-- MySQL
-- HTML5 / CSS3 / JavaScript
-- Chart.js (thống kê)
-- AJAX / Fetch API
-- Responsive design, Dark Mode
+1. Tải và cài [XAMPP](https://www.apachefriends.org/)  
+   *(Tránh cài vào ổ C)*  
+2. Giải nén thư mục **QuanLyNhanSu** vào:  
+```
 
+VỊ trí cài\xampp\htdocs\
+
+```
+3. Mở **phpMyAdmin** → tạo cơ sở dữ liệu `qlns` → Import file `qlns.sql`  
+4. Chạy website tại trình duyệt:  
+```
+
+[http://localhost/QuanLyNhanSu/](http://localhost/QuanLyNhanSu/)
+
+```
+5. Sử dụng các chức năng: quản lý nhân viên, phòng ban, thống kê, upload ảnh.
+
+---
+
+## 💻 Công nghệ sử dụng
+
+| Thành phần | Công nghệ |
+|-------------|------------|
+| Ngôn ngữ backend | PHP (v7+) |
+| CSDL | MySQL |
+| Frontend | HTML5, CSS3, JavaScript |
+| Biểu đồ | Chart.js |
+| Framework UI | Bootstrap 5 |
+| Server | XAMPP (Apache + MySQL) |
 ##  Nhóm thực hiện
 
 1. Hà Thế Duy – Backend & CSDL

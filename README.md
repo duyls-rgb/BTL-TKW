@@ -8,9 +8,9 @@ Website quản lý nhân sự sử dụng **PHP + MySQL**, có giao diện hiệ
 ---
 ## Các lỗi vẫn còn gặp
 
-1.Lặp lại nhân viên khi load file "qlns.sql" nhiều lần (khắc phục bằng cách khởi động XAMPP theo hướng dẫn, vào "http://localhost/phpmyadmin", ở mục bên trái nhấn vào "qlns", chọn vào phần "departments" hoặc "employees", chọn các phần bị lặp và xoá 
-2.Không hiển thị được địa chỉ gmail
-3.Chức năng quản lý phòng ban và thống kê vẫn chưa hoàn thiện
+1. Lặp lại nhân viên khi load file "qlns.sql" nhiều lần (khắc phục bằng cách khởi động XAMPP theo hướng dẫn, vào "http://localhost/phpmyadmin", ở mục bên trái nhấn vào "qlns", chọn vào phần "departments" hoặc "employees", chọn các phần bị lặp và xoá 
+2. Không hiển thị được địa chỉ gmail
+3. Chức năng quản lý phòng ban và thống kê vẫn chưa hoàn thiện
 
 ## 🚀 Tính năng chính
 

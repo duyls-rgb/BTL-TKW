@@ -99,7 +99,7 @@ QuanLyNhanSu/
 | Framework UI | Bootstrap 5 |
 | Server | XAMPP (Apache + MySQL) |
 ##  Nhóm thực hiện
-
+Báo cáo & Thống kê
 1. Hà Thế Duy – Backend & CSDL
-2. Phạm Minh Đức – Frontend & Giao diện
-3. Vũ Phùng Quang Huy – Báo cáo & Thống kê
+2. Phạm Minh Đức – Báo cáo & Thống kê
+3. Vũ Phùng Quang Huy – Frontend & Giao diện

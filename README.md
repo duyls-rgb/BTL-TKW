@@ -67,26 +67,58 @@ QuanLyNhanSu/
 
 ---
 
-## ⚙️ Cài đặt trên XAMPP
+##  CHUẨN BỊ XAMPP
+1. Tải XAMPP tại: https://www.apachefriends.org/download.html 
+2. Cài đặt bình thường (ổ khác ngoài ổ C:).
+3. Sau khi cài, mở XAMPP Control Panel (biểu tượng cam 🟧).
+4. Bấm Start cho 2 dịch vụ:
+   - Apache ✅
+   - MySQL ✅
+5. Khi cả hai dòng hiện 'Running' màu xanh lá → XAMPP đã sẵn sàng.
+##  GIẢI NÉN DỰ ÁN
+1. Giải nén file 'QuanLyNhanSu.zip' vào thư mục bạn chọn
+2. Sau khi giải nén, bạn sẽ có thư mục:
+   Ổ cứng cài\Thư mục cài\htdocs\QuanLyNhanSu\
+3. Bên trong thư mục phải có:
+   api\
+   css\
+   inc\
+   js\
+   images\
+   uploads\
+   qlns.sql
+   index.html
+##  TẠO CƠ SỞ DỮ LIỆU (MySQL)
+1. Mở trình duyệt → gõ:
+   http://localhost/phpmyadmin
+2. Chọn tab 'Import' → 'Chọn tệp' → nạp file:
+   Ổ cứng cài\Thư mục cài\htdocs\QuanLyNhanSu\qlns.sql
+3. Nhấn 'Go' (Nhập ở phía dưới trang) để thực hiện.
+4. Sau khi import, sẽ có database 'qlns' gồm 2 bảng:
+   - departments
+   - employees
+  
+##  KIỂM TRA KẾT NỐI CƠ SỞ DỮ LIỆU
 
-1. Tải và cài [XAMPP](https://www.apachefriends.org/)  
-   *(Tránh cài vào ổ C, tạo thư mục để cài)*  
-2. Giải nén thư mục **QuanLyNhanSu** vào: 
-```
+1. Mở file: inc\config.php
+2. Kiểm tra cấu hình:
+   define('DB_HOST','localhost');
+   define('DB_NAME','qlns');
+   define('DB_USER','root');
+   define('DB_PASS','');
+3. Nếu bạn không đổi gì trong XAMPP → giữ nguyên.
+   (Mặc định MySQL không có mật khẩu cho root)
+   
+##  CHẠY WEBSITE
 
-Ổ cứng cài\Thư mục cài\htdocs\
+1. Mở trình duyệt và gõ:
+   http://localhost/QuanLyNhanSu/
+2. Nếu bạn đổi cổng Apache (ví dụ 8080), gõ:
+   http://localhost:8080/QuanLyNhanSu/
 
-```
-3. Mở **phpMyAdmin** → tạo cơ sở dữ liệu `qlns` → Import file `qlns.sql`  
-4. Chạy website tại trình duyệt:  
-```
-
-[http://localhost/QuanLyNhanSu/](http://localhost/QuanLyNhanSu/)
-
-```
-5. Sử dụng các chức năng: quản lý nhân viên, phòng ban, thống kê, upload ảnh.
-
----
+✅ Trang chủ sẽ hiện logo NS và nút 'Quản lý nhân viên'.
+✅ Có nút 🌙 bật/tắt Dark Mode.
+✅ Giao diện hiện đại, responsive.
 
 ## 💻 Công nghệ sử dụng
 

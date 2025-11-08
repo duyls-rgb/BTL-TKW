@@ -98,8 +98,11 @@ QuanLyNhanSu/
 | Biểu đồ | Chart.js |
 | Framework UI | Bootstrap 5 |
 | Server | XAMPP (Apache + MySQL) |
+
 ##  Nhóm thực hiện
+
 Báo cáo & Thống kê
 1. Hà Thế Duy – Backend & CSDL
 2. Phạm Minh Đức – Báo cáo & Thống kê
-3. Vũ Phùng Quang Huy – Frontend & Giao diện
+3. Vũ Phùng Quang Huy – Frontend 
+4. Hoàng Văn Tùng - Giao diện

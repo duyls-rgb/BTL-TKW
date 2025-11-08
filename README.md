@@ -1,7 +1,7 @@
 # BTL-TKW
 
 
-# 🌐 Quản Lý Nhân Sự (QuanLyNhanSu_Update_v2)
+# 🌐 Quản Lý Nhân Sự (QuanLyNhanSu)
 
 Website quản lý nhân sự sử dụng **PHP + MySQL**, có giao diện hiện đại, hỗ trợ **Dark Mode**, **thống kê trực quan**, và **upload ảnh hồ sơ** nhân viên.
 
@@ -63,7 +63,7 @@ QuanLyNhanSu/
 
 1. Tải và cài [XAMPP](https://www.apachefriends.org/)  
    *(Tránh cài vào ổ C)*  
-2. Giải nén thư mục **QuanLyNhanSu** vào:  
+2. Giải nén thư mục **QuanLyNhanSu** vào: 
 ```
 
 VỊ trí cài\xampp\htdocs\

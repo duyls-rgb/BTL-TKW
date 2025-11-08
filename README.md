@@ -66,6 +66,8 @@ QuanLyNhanSu/
 ```
 
 ---
+## Hướng dẫn cài đặt
+Tải video hướng dẫn hoặc đọc hướng dẫn ở dưới
 
 ##  CHUẨN BỊ XAMPP
 1. Tải XAMPP tại: https://www.apachefriends.org/download.html 

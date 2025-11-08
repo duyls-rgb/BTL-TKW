@@ -48,6 +48,9 @@ QuanLyNhanSu/
 ├── css/
 │   └── style.css           # Giao diện CSS tùy chỉnh
 │
+├── config/
+│   └── database.php        # Kết nối cơ sở dữ liệu
+│
 ├── js/
 │   └── main.js             # Logic xử lý frontend (fetch API, toast, dark mode)
 │

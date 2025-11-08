@@ -62,11 +62,11 @@ QuanLyNhanSu/
 ## ⚙️ Cài đặt trên XAMPP
 
 1. Tải và cài [XAMPP](https://www.apachefriends.org/)  
-   *(Tránh cài vào ổ C)*  
+   *(Tránh cài vào ổ C, tạo thư mục để cài)*  
 2. Giải nén thư mục **QuanLyNhanSu** vào: 
 ```
 
-VỊ trí cài\xampp\htdocs\
+Ổ cứng cài\Thư mục cài\htdocs\
 
 ```
 3. Mở **phpMyAdmin** → tạo cơ sở dữ liệu `qlns` → Import file `qlns.sql`  
